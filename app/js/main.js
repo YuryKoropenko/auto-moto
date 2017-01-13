@@ -8,4 +8,13 @@ $(document).ready(function() {
 		$(this).removeClass('menu__link-active');
 		$(this).children('.menu__drop-down').stop(true, false).hide();
 	});
+
+/**/
+	$('.sponsors-arrow__left').on('click', function(e) {
+		$('.slick-prev').trigger('click', false);
+	});
+
+	$('.sponsors-arrow__right').on('click', function(e) {
+		$('.slick-next').trigger('click', false);
+	});
 });
