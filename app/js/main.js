@@ -17,4 +17,7 @@ $(document).ready(function() {
 	$('.sponsors-arrow__right').on('click', function(e) {
 		$('.slick-next').trigger('click', false);
 	});
+
+/**/
+	$(".contacts__tabs-wp").lightTabs();
 });
