@@ -611,3 +611,276 @@ body
 				background-position: -96px 0
 			&-5
 				background-position: -128px 0
+.path
+	padding-left: 50px
+	padding-right: 50px
+	&__item
+		display: inline-block
+		&::after
+			content: '/'
+			font-size: 14px
+			color: #91dbe8
+			padding: 0 5px
+	&__link
+		font-size: 14px
+		color: #91dbe8
+.content-card
+	padding-top: 20px
+.card
+	&__title
+		font-size: 18px
+		color: #373737
+		font-family: "ProximaNovaBold", sans-serif
+	&__left
+		padding-left: 50px
+		padding-top: 16px
+		width: 485px
+		float: left
+	&-slider
+		padding-top: 20px
+		&__top
+			border: 2px solid #eeeeee
+			&-item
+				padding: 26px 0 52px
+				img
+					width: 288px
+					margin: 0 auto
+		&__bottom
+			padding: 25px 0
+			&-item
+				border-left: 1px solid #f4f4f4
+				border-right: 1px solid #f4f4f4
+				text-align: center !important
+				img
+					display: inline-block
+	&__description
+		&-title
+			font-size: 18px
+			color: #373737
+			font-family: "ProximaNovaBold", sans-serif
+			display: block
+			padding-bottom: 24px
+		&-text
+			line-height: 24px
+			font-size: 16px
+			color: #373737
+		&-link
+			color: #f72c25
+			border-bottom: 1px dotted #f72c25
+			display: inline-block
+			font-size: 16px
+			line-height: 24px
+	&__info
+		padding-top: 40px
+		&-wp
+			&-row
+				@extend .clearfix
+				width: 100%
+			&-name
+				color: #373737
+				font-size: 16px
+				font-family: "ProximaNovaBold", sans-serif
+				float: left
+				line-height: 24px
+				width: 150px
+			&-description
+				color: #373737
+				font-size: 16px
+				line-height: 24px
+				float: left
+			&-link
+				color: #f72c25
+				border-bottom: 1px dotted #f72c25
+				display: inline-block
+				font-size: 16px
+				line-height: 24px
+				margin-top: 10px
+	&__right
+		width: 420px
+		float: right
+		padding-top: 56px
+		&-b
+			&-row
+				@extend .clearfix
+				border-bottom: 1px solid #f3f3f3
+				padding: 12px 0
+				&-n
+					border-bottom: none
+			&-left
+				color: #ababab
+				font-size: 14px
+				line-height: 24px
+				width: 100px
+				float: left
+			&-right
+				font-size: 14px
+				line-height: 24px
+				color: #373737
+				float: left
+			&-input
+				width: 40px
+				border: 1px solid #efefef
+				height: 22px
+				display: inline-block
+				text-align: right
+				padding: 0 4px
+				margin-right: 10px
+			&-opl
+				margin-right: 2px
+				display: inline-block
+			&-price
+				color: #373737
+				font-size: 22px
+				font-family: "ProximaNovaBold"
+			&-button
+				color: #373737
+				font-size: 16px
+				font-family: "ProximaNovaBold", sans-serif
+				height: 40px
+				border: 1px solid #606574
+				padding: 0 30px 0 30px
+				display: inline-block
+				line-height: 40px
+				border-radius: 5px
+				&:first-child
+					border-color: #ffce00
+					position: relative
+					padding-right: 92px
+					float: left
+				&:last-child
+					float: right
+				&-corz
+					width: 62px
+					display: block
+					height: 39px
+					position: absolute
+					right: 0
+					top: 0
+					background-color: #ffce00
+					border-radius: 0 0 5px 0
+					&::after
+						content: ''
+						display: block
+						@include triangle(38px 10px, #ffce00, left);
+						position: absolute
+						left: -10px
+						top: 0
+				&-icon
+					background-image: url(../img/header-icon.png)
+					background-repeat: no-repeat
+					background-position: right top
+					display: inline-block
+					height: 21px
+					width: 22px
+					position: absolute
+					right: 20px
+					top: 50%
+					margin-top: -10.5px
+		&-d
+			padding-top: 70px
+			&-title
+				font-size: 18px
+				color: #373737
+				font-family: "ProximaNovaBold", sans-serif
+				display: block
+				padding-bottom: 24px
+			&-block
+				@extend .clearfix
+			&-item
+				width: 100 / 3 + %
+				float: left
+				text-align: center
+				padding: 0 12px
+				position: relative
+				cursor: pointer
+				padding-bottom: 18px
+				&::after
+					content: ''
+					position: absolute
+					left: 0px
+					top: 50%
+					width: 1px
+					height: 128px
+					margin-top: -64px
+					background-color: #f3f3f3
+				&:first-child
+					&:after
+						display: none
+				&:hover
+					background-color: #fff
+					-webkit-box-shadow: 0px 17px 17px 0px rgba(238,238,238,1)
+					-moz-box-shadow: 0px 17px 17px 0px rgba(238,238,238,1)
+					box-shadow: 0px 17px 17px 0px rgba(238,238,238,1)
+				&-title
+					font-size: 14px
+					line-height: 24px
+					color: #373737
+					text-decoration: underline
+					cursor: pointer
+					&:hover
+						text-decoration: none
+				&-wp
+					@extend .clearfix
+					padding-top: 10px
+				&-price
+					font-size: 18px
+					color: #373737
+					font-family: "ProximaNovaBold", sans-serif
+					float: left
+					&-d
+						color: #f72c25
+						font-size: 12px
+						font-family: "ProximaNovaRegular", sans-serif
+				&-button
+					width: 30px
+					height: 18px
+					background-color: #eee
+					float: right
+					display: block
+					border-radius: 3px
+					background-image: url(../img/corz.png)
+					background-repeat: no-repeat
+					background-position: center
+					cursor: pointer
+					&:hover
+						background-color: #ffce00
+				&-one
+					color: #373737
+					font-size: 12px
+					line-height: 14px
+					display: inline-block
+					border-bottom: 1px dotted #373737
+					margin-top: 10px
+					&:hover
+						text-decoration: none
+						color: #373737
+						border-bottom: 1px dotted transparent
+	&__bottom
+		width: 100%
+		float: left
+		text-align: center
+		padding-top: 52px
+		&-title
+			display: inline-block
+			font-size: 18px
+			color: #373737
+			font-family: "ProximaNovaBold", sans-serif
+			padding-bottom: 24px
+	&__recommend
+		float: left
+		width: 100%
+		text-align: center
+		padding-top: 52px
+		&-item
+			width: 20%
+			height: 320px
+		.card__right-d-item-wp
+			text-align: center
+			.card__right-d-item-price
+				float: none
+				display: inline-block
+			.card__right-d-item-button
+				float: none
+				display: inline-block
+				margin-left: 10px
+				vertical-align: top

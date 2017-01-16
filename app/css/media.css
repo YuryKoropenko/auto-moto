@@ -34,6 +34,19 @@
   .phone__number {
     font-size: 11.5px;
   }
+  .card__left {
+    padding-left: 30px;
+    width: 430px;
+  }
+  .card__right {
+    width: 370px;
+  }
+  .card__right-b-button {
+    padding: 0 26px;
+  }
+  .card__right-b-button:first-child {
+    padding-right: 88px;
+  }
   /**/
 }
 
