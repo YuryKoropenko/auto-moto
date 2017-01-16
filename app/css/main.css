@@ -199,6 +199,7 @@ body {
 .phone {
   margin-top: 39px;
   float: left;
+  width: 12.7%;
 }
 
 .phone__number {
@@ -547,6 +548,7 @@ body {
   position: absolute;
   margin-top: -20px;
   cursor: pointer;
+  z-index: 9999;
 }
 
 .sponsors-arrow__left {
@@ -711,20 +713,20 @@ body {
 
 .footer {
   background-color: #373737;
-  height: 358px;
 }
 
 .footer__left {
   float: left;
   width: 57.5%;
+  background-color: #373737;
 }
 
 .footer__right {
   float: right;
-  position: relative;
   width: 42.5%;
   background-color: #2b2b2b;
-  height: 357px;
+  padding-bottom: 20px;
+  position: relative;
 }
 
 .footer__right::after {
@@ -825,6 +827,7 @@ body {
   float: left;
   padding-left: 40px;
   padding-top: 20px;
+  width: 50%;
 }
 
 .footer__write-email {
@@ -847,6 +850,7 @@ body {
   clear: left;
   padding-left: 40px;
   padding-top: 20px;
+  width: 50%;
 }
 
 .footer__row {

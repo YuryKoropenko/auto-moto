@@ -104,6 +104,7 @@ body
 .phone
 	margin-top: 39px
 	float: left
+	width: 12.7%
 	&__number
 		color: #383f51
 		font-family: "ProximaNovaBold", sans-serif
@@ -358,6 +359,7 @@ body
 		position: absolute
 		margin-top: -20px
 		cursor: pointer
+		z-index: 9999
 		&__left
 			left: 0
 			top: 50%
@@ -478,16 +480,16 @@ body
 				padding-top: 10px
 .footer
 	background-color: #373737
-	height: 358px
 	&__left
 		float: left
 		+percent(575, 1000)
+		background-color: #373737
 	&__right
 		float: right
-		position: relative
 		+percent(425, 1000)
 		background-color: #2b2b2b
-		height: 357px
+		padding-bottom: 20px
+		position: relative
 		&::after
 			content: ''
 			position: absolute
@@ -561,6 +563,7 @@ body
 		float: left
 		padding-left: 40px
 		padding-top: 20px
+		width: 50%
 		&-email
 			color: #92dce5
 			border-bottom: 1px dotted #92dce5
@@ -577,6 +580,7 @@ body
 		clear: left
 		padding-left: 40px
 		padding-top: 20px
+		width: 50%
 	&__row
 		float: left
 		width: 100%
