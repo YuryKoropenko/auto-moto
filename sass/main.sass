@@ -512,6 +512,8 @@ body
 			font-size: 16px
 			color: #fff
 			font-family: "ProximaNovaBold", sans-serif
+			&:hover
+				color: #92dce5
 	&__logo
 		padding-left: 20px
 		padding-top: 42px
@@ -571,6 +573,7 @@ body
 			font-family: "ProximaNovaBold", sans-serif
 			text-decoration: none
 			line-height: 22px
+			display: inline-block
 			&:hover
 				text-decoration: none
 				color: #92dce5
@@ -1134,7 +1137,7 @@ body
 			top: 50%
 			transform: translateY(-50%)
 			&-wp
-				width: 150px
+				+percent(150, 900)
 				float: left
 				height: 90px
 				position: relative
@@ -1142,14 +1145,14 @@ body
 			color: #383f51
 			font-size: 16px
 			line-height: 18px
-			width: 392px
+			+percent(392, 900)
 			float: left
 			height: 90px
 			line-height: 90px
 			&:hover
 				color: #383f51
 		&-col
-			width: 218px
+			+percent(218, 900)
 			float: left
 			height: 90px
 		&-plus
@@ -1185,7 +1188,7 @@ body
 			color: #373737
 			font-family: "ProximaNovaBold", sans-serif
 			font-size: 18px
-			width: 115px
+			+percent(115, 900)
 			float: left
 			display: block
 			line-height: 90px
@@ -1200,7 +1203,7 @@ body
 			&:hover
 				color: #f72c25
 			&-wp
-				width: 25px
+				+percent(25, 900)
 				float: left
 	&__c-center
 		text-align: center
@@ -1275,21 +1278,21 @@ body
 			right: 0
 			display: block
 	&-first
-		width: 445px
+		+percent(445, 920)
 		float: left
 		line-height: 86px
 		color: #383f51
 		font-size: 18px
 		font-family: "ProximaNovaBold", sans-serif
 	&-center
-		width: 268px
+		+percent(268, 920)
 		float: left
 		line-height: 86px
 		color: #383f51
 		font-size: 18px
 		font-family: "ProximaNovaBold", sans-serif
 	&-last
-		width: 207px
+		+percent(207, 920)
 		float: left
 		line-height: 86px
 		color: #383f51
@@ -1301,12 +1304,12 @@ body
 		padding-top: 28px
 	&-1
 		float: left
-		width: 416px
+		+percent(416, 920)
 		&-row
 			@extend .clearfix
 			padding-bottom: 18px
 			&-text
-				width: 144px
+				+percent(144, 416)
 				float: left
 				&-span
 					color: #373737
@@ -1321,7 +1324,7 @@ body
 				width: 100%
 				padding-left: 5px
 				&-wp
-					width: 272px
+					+percent(272, 416)
 					float: left
 					padding-right: 24px
 			&-textarea
@@ -1333,19 +1336,36 @@ body
 				padding-left: 5px
 	&-2
 		float: left
-		width: 242px
 		padding-left: 24px
+		position: relative
+		+percent(242, 920)
+		&::before
+			content: ''
+			position: absolute
+			width: 1px
+			height: 344px
+			background-color: #f2f2f2
+			left: 0
+			top: 0
 		&-row
+			margin-bottom: 13px
 			&-check
 				display: none
 			&-lab
 				cursor: pointer
 				display: inline-block
 				position: relative
-				padding-left: 42px
+				padding-left: 80px
 				color: #373737
 				font-size: 16px
 				line-height: 18px
+				padding-top: 10px
+				padding-bottom: 10px
+				&-icon
+					position: absolute
+					display: block
+					left: 42px
+					top: 50%
 				&-active
 					font-family: "ProximaNovaBold", sans-serif
 				&::before
@@ -1366,7 +1386,102 @@ body
 				height: 20px
 				position: absolute
 				left: 3px
-				top: -5px
+				top: 50%
+				margin-top: -15px
 	&-3
 		float: left
-		width: 260px
+		padding-left: 24px
+		position: relative
+		+percent(260, 920)
+		&::before
+			content: ''
+			position: absolute
+			width: 1px
+			height: 344px
+			background-color: #f2f2f2
+			left: 0
+			top: 0
+.corz__b-bottom-wp
+	text-align: center
+	padding-top: 25px
+	&-os
+		color: #373737
+		font-family: "ProximaNovaBold", sans-serif
+		font-size: 30px
+		display: inline-block
+		width: 100%
+		span
+			margin-left: 10px
+	&-button
+		color: #373737
+		display: inline-block
+		font-family: "ProximaNovaBold", sans-serif
+		font-size: 24px
+		height: 62px
+		line-height: 60px
+		border: 2px solid #ffe888
+		padding: 0 40px
+		border-radius: 9px
+		margin-top: 36px
+		@include transition(all 0.4s ease-in-out)
+		&:hover
+			text-decoration: none
+			color: #373737
+			background-color: #ffe888
+.news
+	&__block
+		padding: 0 50px
+		&-item
+			padding-bottom: 32px
+			padding-top: 32px
+			border-bottom: 1px solid #f4f4f4
+			cursor: pointer
+			&:hover
+				-webkit-box-shadow: 0px 17px 17px 0px rgba(225,225,225,1)
+				-moz-box-shadow: 0px 17px 17px 0px rgba(225,225,225,1)
+				box-shadow: 0px 17px 17px 0px rgba(225,225,225,1)
+			&-data
+				display: block
+				color: #cbcbcb
+				font-size: 16px
+				line-height: 24px
+			&-title
+				font-size: 18px
+				line-height: 18px
+				color: #383f51
+				font-family: "ProximaNovaBold", sans-serif
+				display: inline-block
+				&:hover
+					color: #f72c25
+			&-description
+				margin-top: 2px
+				display: block
+				color: #373737
+				line-height: 24px
+				font-size: 16px
+.pagination
+	font-size: 0
+	width: 100%
+	text-align: center
+	padding-top: 60px
+	padding-bottom: 60px
+	&__item
+		display: inline-block
+		margin-left: 12px
+		&:first-child
+			margin-left: 0
+	&__link
+		color: #373737
+		font-family: "ProximaNovaBold", sans-serif
+		font-size: 16px
+		line-height: 18px
+		text-decoration: underline
+		padding: 0 2px
+		&:hover
+			color: #f72c25
+		&-first
+			font-family: "ProximaNovaRegular", sans-serif
+		&-last
+			font-family: "ProximaNovaRegular", sans-serif
+.content-news
+	padding-bottom: 0
