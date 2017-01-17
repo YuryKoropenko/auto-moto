@@ -19,5 +19,10 @@ $(document).ready(function() {
 	});
 
 /**/
-	$(".contacts__tabs-wp").lightTabs();
+	$('.corz__b-center-2-row-lab').on('click', function() {
+		$(this).toggleClass('corz__b-center-2-row-lab-active');
+	});
+
+/**/
+	$('.contacts__tabs-wp').lightTabs();
 });

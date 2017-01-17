@@ -47,6 +47,19 @@
   .card__right-b-button:first-child {
     padding-right: 88px;
   }
+  .contacts__left {
+    padding-left: 30px;
+    width: 534px;
+  }
+  .contacts__right {
+    padding-right: 30px;
+  }
+  .contacts__full {
+    padding-left: 0 !important;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: 93%;
+  }
   /**/
 }
 
