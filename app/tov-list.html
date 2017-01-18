@@ -15,6 +15,7 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/slick/slick/slick.css">
+	<link rel="stylesheet" href="libs/ui/jquery-ui.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -22,7 +23,7 @@
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="libs/slick/slick/slick.js"></script>
-	<script type="text/javascript" src="libs/lightTabs/lightTabs.js"></script>
+	<script type="text/javascript" src="libs/ui/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- End_Scripts -->
 </head>
@@ -1187,207 +1188,358 @@
 			</div>
 		</div>
 	</header>
-	<div class="content content-card">
-		<div class="content-wrapper">
-			<ul class="path">
-				<li class="path__item">
-					<a href="#" class="path__link">
-						Главная
-					</a>
-				</li>
-				<li class="path__item">
-					<a href="#" class="path__link">
-						Контакты
-					</a>
-				</li>
-			</ul>
-			<div class="contacts__left">
-				<h2 class="content__title">
-					КОНТАКТЫ
-				</h2>
-				<div class="contacts__tabs-wp">
-					<ul class="contacts__tabs">
-						<li class="contacts__tabs-item">
-							<span class="contacts__tabs-item-s">Розничные<br>продажи</span>
-						</li>
-						<li class="contacts__tabs-item">
-							<span class="contacts__tabs-item-s">Оптовые продажи<br>и сотрудничество</span>
-						</li>
-						<li class="contacts__tabs-item">
-							<span class="contacts__tabs-item-s">Вебмастер</span>
-						</li>
-					</ul>
-					<div class="contacts__tabs-cont">
-						<div class="contacts__tabs-cont-wp">
-							<div class="contacts__tabs-cont-item">
-								<div class="contacts__tabs-cont-icon">
-									<div class="contacts__tabs-cont-round">
-										<span class="contacts__tabs-cont-round-i" style="background-position: left top; width: 29px; height: 39px; margin-top: -19.5px;"></span>
-									</div>
-								</div>
-								<div class="contacts__tabs-cont-text">
-									г. Москва,<br>ул. Удальцова д.27
-								</div>
-							</div>
-							<div class="contacts__tabs-cont-item">
-								<div class="contacts__tabs-cont-icon">
-									<div class="contacts__tabs-cont-round">
-										<span class="contacts__tabs-cont-round-i" style="background-position: left bottom; width: 33px; height: 31px; margin-top: -15.5px;"></span>
-									</div>
-								</div>
-								<div class="contacts__tabs-cont-text">
-									info@atvexpert.ru
-								</div>
-							</div>
-							<div class="contacts__tabs-cont-item">
-								<div class="contacts__tabs-cont-icon">
-									<div class="contacts__tabs-cont-round">
-										<span class="contacts__tabs-cont-round-i" style="background-position: right top; width: 31px; height: 31px; margin-top: -15.5px;"></span>
-									</div>
-								</div>
-								<div class="contacts__tabs-cont-text">
-									+7 (495) 231-11-11<br>
-									+7 (961)501-50-10
-								</div>
-							</div>
-							<div class="contacts__tabs-cont-item">
-								<div class="contacts__tabs-cont-icon">
-									<div class="contacts__tabs-cont-round">
-										<span class="contacts__tabs-cont-round-i" style="background-position: right bottom; width: 36px; height: 36px; margin-top: -18px;"></span>
-									</div>
-								</div>
-								<div class="contacts__tabs-cont-text">
-									atvexpert
-								</div>
-							</div>
-						</div>
-						<div class="contacts__tabs-cont-wp">
-							<div class="contacts__tabs-cont-item">
-								<div class="contacts__tabs-cont-icon">
-									<div class="contacts__tabs-cont-round">
-										<span class="contacts__tabs-cont-round-i" style="background-position: left top; width: 29px; height: 39px; margin-top: -19.5px;"></span>
-									</div>
-								</div>
-								<div class="contacts__tabs-cont-text">
-									г. Москва,<br>ул. Удальцова д.27
-								</div>
-							</div>
-							<div class="contacts__tabs-cont-item">
-								<div class="contacts__tabs-cont-icon">
-									<div class="contacts__tabs-cont-round">
-										<span class="contacts__tabs-cont-round-i" style="background-position: left bottom; width: 33px; height: 31px; margin-top: -15.5px;"></span>
-									</div>
-								</div>
-								<div class="contacts__tabs-cont-text">
-									info@atvexpert.ru
-								</div>
-							</div>
-							<div class="contacts__tabs-cont-item">
-								<div class="contacts__tabs-cont-icon">
-									<div class="contacts__tabs-cont-round">
-										<span class="contacts__tabs-cont-round-i" style="background-position: right top; width: 31px; height: 31px; margin-top: -15.5px;"></span>
-									</div>
-								</div>
-								<div class="contacts__tabs-cont-text">
-									+7 (495) 231-11-11<br>
-									+7 (961)501-50-10
-								</div>
-							</div>
-							<div class="contacts__tabs-cont-item">
-								<div class="contacts__tabs-cont-icon">
-									<div class="contacts__tabs-cont-round">
-										<span class="contacts__tabs-cont-round-i" style="background-position: right bottom; width: 36px; height: 36px; margin-top: -18px;"></span>
-									</div>
-								</div>
-								<div class="contacts__tabs-cont-text">
-									atvexpert
-								</div>
-							</div>
-						</div>
-						<div class="contacts__tabs-cont-wp">
-							<div class="contacts__tabs-cont-item">
-								<div class="contacts__tabs-cont-icon">
-									<div class="contacts__tabs-cont-round">
-										<span class="contacts__tabs-cont-round-i" style="background-position: left top; width: 29px; height: 39px; margin-top: -19.5px;"></span>
-									</div>
-								</div>
-								<div class="contacts__tabs-cont-text">
-									г. Москва,<br>ул. Удальцова д.27
-								</div>
-							</div>
-							<div class="contacts__tabs-cont-item">
-								<div class="contacts__tabs-cont-icon">
-									<div class="contacts__tabs-cont-round">
-										<span class="contacts__tabs-cont-round-i" style="background-position: left bottom; width: 33px; height: 31px; margin-top: -15.5px;"></span>
-									</div>
-								</div>
-								<div class="contacts__tabs-cont-text">
-									info@atvexpert.ru
-								</div>
-							</div>
-							<div class="contacts__tabs-cont-item">
-								<div class="contacts__tabs-cont-icon">
-									<div class="contacts__tabs-cont-round">
-										<span class="contacts__tabs-cont-round-i" style="background-position: right top; width: 31px; height: 31px; margin-top: -15.5px;"></span>
-									</div>
-								</div>
-								<div class="contacts__tabs-cont-text">
-									+7 (495) 231-11-11<br>
-									+7 (961)501-50-10
-								</div>
-							</div>
-							<div class="contacts__tabs-cont-item">
-								<div class="contacts__tabs-cont-icon">
-									<div class="contacts__tabs-cont-round">
-										<span class="contacts__tabs-cont-round-i" style="background-position: right bottom; width: 36px; height: 36px; margin-top: -18px;"></span>
-									</div>
-								</div>
-								<div class="contacts__tabs-cont-text">
-									atvexpert
-								</div>
-							</div>
-						</div>
-					</div>
+	<div class="tov-list">
+		<div class="tov-list-wrapper">
+			<div class="sidebar">
+				<div class="corz__t-center">
+					<h2 class="content__title">
+						Задайте парамерты
+					</h2>
 				</div>
-			</div>
-			<div class="contacts__right">
-				<div class="contacts__form">
-					<form action="">
-						<b class="contacts__form-title">
-							Есть вопросы? Пишите!
+				<div class="content__sidebar-left">
+					<div class="filter">
+						<b class="filter__title">
+							Цена, р.
 						</b>
-						<input type="text" class="contacts__form-input" placeholder="Ваше имя">
-						<input type="text" class="contacts__form-input" placeholder="Ваш e-mail">
-						<textarea name="" id="" cols="30" rows="10" class="contacts__form-textarea" placeholder="Ваше сообщение"></textarea>
-						<button type="submit" class="contacts__form-button">
-							Отправить
+						<input type="text" class="filter__price filter__price-first">
+						<span>-</span>
+						<input type="text" class="filter__price filter__price-last">
+						<div class="filter__price-sl"></div>
+					</div>
+					<div class="manufacturer">
+						<b class="manufacturer__title">
+							Страна производитель
+						</b>
+						<div class="manufacturer__block">
+							<div class="corz__b-center-2-row">
+								<input type="checkbox" id="check11" class="corz__b-center-2-row-check">
+								<label for="check11" class="corz__b-center-2-row-lab">
+									<div class="corz__b-center-2-row-lab-icon"></div>
+									Китай
+								</label>
+							</div>
+							<div class="corz__b-center-2-row">
+								<input type="checkbox" id="check12" class="corz__b-center-2-row-check">
+								<label for="check12" class="corz__b-center-2-row-lab">
+									<div class="corz__b-center-2-row-lab-icon"></div>
+									Россия
+								</label>
+							</div>
+							<div class="corz__b-center-2-row">
+								<input type="checkbox" id="check13" class="corz__b-center-2-row-check">
+								<label for="check13" class="corz__b-center-2-row-lab">
+									<div class="corz__b-center-2-row-lab-icon"></div>
+									Америка
+								</label>
+							</div>
+							<div class="corz__b-center-2-row">
+								<input type="checkbox" id="check14" class="corz__b-center-2-row-check">
+								<label for="check14" class="corz__b-center-2-row-lab">
+									<div class="corz__b-center-2-row-lab-icon"></div>
+									Япония
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="manufacturer">
+						<b class="manufacturer__title">
+							Бренд
+						</b>
+						<div class="manufacturer__block">
+							<div class="corz__b-center-2-row">
+								<input type="checkbox" id="check16" class="corz__b-center-2-row-check">
+								<label for="check16" class="corz__b-center-2-row-lab">
+									<div class="corz__b-center-2-row-lab-icon"></div>
+									Kawasaki
+								</label>
+							</div>
+							<div class="corz__b-center-2-row">
+								<input type="checkbox" id="check17" class="corz__b-center-2-row-check">
+								<label for="check17" class="corz__b-center-2-row-lab">
+									<div class="corz__b-center-2-row-lab-icon"></div>
+									BMW
+								</label>
+							</div>
+							<div class="corz__b-center-2-row">
+								<input type="checkbox" id="check18" class="corz__b-center-2-row-check">
+								<label for="check18" class="corz__b-center-2-row-lab">
+									<div class="corz__b-center-2-row-lab-icon"></div>
+									Moto
+								</label>
+							</div>
+							<div class="corz__b-center-2-row">
+								<input type="checkbox" id="check19" class="corz__b-center-2-row-check">
+								<label for="check19" class="corz__b-center-2-row-lab">
+									<div class="corz__b-center-2-row-lab-icon"></div>
+									Harley
+								</label>
+							</div>
+							<div class="manufacturer__link-wp">
+								<a href="#" class="manufacturer__link">
+									еще 7 вариантов
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="manufacturer">
+						<b class="manufacturer__title">
+							Размер
+						</b>
+						<div class="manufacturer__block">
+							<div class="corz__b-center-2-row">
+								<input type="checkbox" id="check20" class="corz__b-center-2-row-check">
+								<label for="check20" class="corz__b-center-2-row-lab">
+									<div class="corz__b-center-2-row-lab-icon"></div>
+									280
+								</label>
+							</div>
+							<div class="corz__b-center-2-row">
+								<input type="checkbox" id="check21" class="corz__b-center-2-row-check">
+								<label for="check21" class="corz__b-center-2-row-lab">
+									<div class="corz__b-center-2-row-lab-icon"></div>
+									290
+								</label>
+							</div>
+							<div class="corz__b-center-2-row">
+								<input type="checkbox" id="check22" class="corz__b-center-2-row-check">
+								<label for="check22" class="corz__b-center-2-row-lab">
+									<div class="corz__b-center-2-row-lab-icon"></div>
+									300
+								</label>
+							</div>
+							<div class="corz__b-center-2-row">
+								<input type="checkbox" id="check23" class="corz__b-center-2-row-check">
+								<label for="check23" class="corz__b-center-2-row-lab">
+									<div class="corz__b-center-2-row-lab-icon"></div>
+									310
+								</label>
+							</div>
+							<div class="manufacturer__link-wp">
+								<a href="#" class="manufacturer__link">
+									еще 15 вариантов
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="manufacturer__button-wp">
+						<button class="manufacturer__button">
+							СБРОСИТЬ ФИЛЬТр
 						</button>
-					</form>
-				</div>
-			</div>
-			<div class="contacts__full">
-				<div class="contacts__adrr">
-					<div class="contacts__adrr-left">
-						<i class="contacts__adrr-icon">
-							
-						</i>
-						<a href="#" class="contacts__adrr-link">
-							Посмотреть адрес офиса на карте
-						</a>
-					</div>
-					<div class="contacts__adrr-right">
-						<i class="contacts__adrr-icon" style="width: 31px; height: 33px; background-position: left top; margin-top: -16.5px;">
-							
-						</i>
-						<a href="#" class="contacts__adrr-link" style="color: #ec2a24; border-color: #ec2a24;">
-							Посмотреть адрес склада на карте
-						</a>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="contacts__map">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d143754.34022719596!2d37.62268110156249!3d55.73832171928027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1484637922219" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<div class="t-content-wrapper">
+				<ul class="path">
+					<li class="path__item">
+						<a href="#" class="path__link">
+							Главная
+						</a>
+					</li>
+					<li class="path__item">
+						<a href="#" class="path__link">
+							Каталог
+						</a>
+					</li>
+					<li class="path__item">
+						<a href="#" class="path__link">
+							Для мотоцикла
+						</a>
+					</li>
+				</ul>
+				<div class="t-cont-wp">
+					<h2 class="t-cont-wp__title">
+						Шлемы
+					</h2>
+					<div class="card__right-d-block">
+						<div class="card__right-d-item card__recommend-item tov__item">
+							<img src="img/prod/3.png" alt="" class="card__recommend-item-img">
+							<h3 class="card__right-d-item-title">
+								Шлем мотоциклетный<br>черный, с визором
+							</h3>
+							<img src="img/star.png" alt="">
+							<div class="card__right-d-item-wp">
+								<div class="card__right-d-item-price">
+									2500р.
+								</div>
+								<a href="#" class="card__right-d-item-button">
+									
+								</a>
+							</div>
+							<a href="#" class="card__right-d-item-one">Купить в 1 клик</a>
+						</div>
+						<div class="card__right-d-item card__recommend-item tov__item">
+							<img src="img/prod/3.png" alt="" class="card__recommend-item-img">
+							<h3 class="card__right-d-item-title">
+								Шлем мотоциклетный<br>черный, с визором
+							</h3>
+							<img src="img/star.png" alt="">
+							<div class="card__right-d-item-wp">
+								<div class="card__right-d-item-price">
+									2500р.
+								</div>
+								<a href="#" class="card__right-d-item-button">
+									
+								</a>
+							</div>
+							<a href="#" class="card__right-d-item-one">Купить в 1 клик</a>
+						</div>
+						<div class="card__right-d-item card__recommend-item tov__item">
+							<img src="img/prod/3.png" alt="" class="card__recommend-item-img">
+							<h3 class="card__right-d-item-title">
+								Шлем мотоциклетный<br>черный, с визором
+							</h3>
+							<img src="img/star.png" alt="">
+							<div class="card__right-d-item-wp">
+								<div class="card__right-d-item-price">
+									2500р.
+								</div>
+								<a href="#" class="card__right-d-item-button">
+									
+								</a>
+							</div>
+							<a href="#" class="card__right-d-item-one">Купить в 1 клик</a>
+						</div>
+						<div class="card__right-d-item card__recommend-item tov__item">
+							<img src="img/prod/3.png" alt="" class="card__recommend-item-img">
+							<h3 class="card__right-d-item-title">
+								Шлем мотоциклетный<br>черный, с визором
+							</h3>
+							<img src="img/star.png" alt="">
+							<div class="card__right-d-item-wp">
+								<div class="card__right-d-item-price">
+									2500р.
+								</div>
+								<a href="#" class="card__right-d-item-button">
+									
+								</a>
+							</div>
+							<a href="#" class="card__right-d-item-one">Купить в 1 клик</a>
+						</div>
+						<div class="card__right-d-item card__recommend-item tov__item">
+							<img src="img/prod/3.png" alt="" class="card__recommend-item-img">
+							<h3 class="card__right-d-item-title">
+								Шлем мотоциклетный<br>черный, с визором
+							</h3>
+							<img src="img/star.png" alt="">
+							<div class="card__right-d-item-wp">
+								<div class="card__right-d-item-price">
+									2500р.
+								</div>
+								<a href="#" class="card__right-d-item-button">
+									
+								</a>
+							</div>
+							<a href="#" class="card__right-d-item-one">Купить в 1 клик</a>
+						</div>
+						<div class="card__right-d-item card__recommend-item tov__item">
+							<img src="img/prod/3.png" alt="" class="card__recommend-item-img">
+							<h3 class="card__right-d-item-title">
+								Шлем мотоциклетный<br>черный, с визором
+							</h3>
+							<img src="img/star.png" alt="">
+							<div class="card__right-d-item-wp">
+								<div class="card__right-d-item-price">
+									2500р.
+								</div>
+								<a href="#" class="card__right-d-item-button">
+									
+								</a>
+							</div>
+							<a href="#" class="card__right-d-item-one">Купить в 1 клик</a>
+						</div>
+						<div class="card__right-d-item card__recommend-item tov__item">
+							<img src="img/prod/3.png" alt="" class="card__recommend-item-img">
+							<h3 class="card__right-d-item-title">
+								Шлем мотоциклетный<br>черный, с визором
+							</h3>
+							<img src="img/star.png" alt="">
+							<div class="card__right-d-item-wp">
+								<div class="card__right-d-item-price">
+									2500р.
+								</div>
+								<a href="#" class="card__right-d-item-button">
+									
+								</a>
+							</div>
+							<a href="#" class="card__right-d-item-one">Купить в 1 клик</a>
+						</div>
+						<div class="card__right-d-item card__recommend-item tov__item">
+							<img src="img/prod/3.png" alt="" class="card__recommend-item-img">
+							<h3 class="card__right-d-item-title">
+								Шлем мотоциклетный<br>черный, с визором
+							</h3>
+							<img src="img/star.png" alt="">
+							<div class="card__right-d-item-wp">
+								<div class="card__right-d-item-price">
+									2500р.
+								</div>
+								<a href="#" class="card__right-d-item-button">
+									
+								</a>
+							</div>
+							<a href="#" class="card__right-d-item-one">Купить в 1 клик</a>
+						</div>
+						<div class="card__right-d-item card__recommend-item tov__item">
+							<img src="img/prod/3.png" alt="" class="card__recommend-item-img">
+							<h3 class="card__right-d-item-title">
+								Шлем мотоциклетный<br>черный, с визором
+							</h3>
+							<img src="img/star.png" alt="">
+							<div class="card__right-d-item-wp">
+								<div class="card__right-d-item-price">
+									2500р.
+								</div>
+								<a href="#" class="card__right-d-item-button">
+									
+								</a>
+							</div>
+							<a href="#" class="card__right-d-item-one">Купить в 1 клик</a>
+						</div>
+					</div>
+				</div>
+				<ul class="pagination">
+					<li class="pagination__item">
+						<a href="#" class="pagination__link pagination__link-first">
+							в начало
+						</a>
+					</li>
+					<li class="pagination__item">
+						<a href="#" class="pagination__link">
+							1
+						</a>
+					</li>
+					<li class="pagination__item">
+						<a href="#" class="pagination__link">
+							2
+						</a>
+					</li>
+					<li class="pagination__item">
+						<a href="#" class="pagination__link">
+							3
+						</a>
+					</li>
+					<li class="pagination__item">
+						<a href="#" class="pagination__link">
+							4
+						</a>
+					</li>
+					<li class="pagination__item">
+						<a href="#" class="pagination__link">
+							5
+						</a>
+					</li>
+					<li class="pagination__item">
+						<a href="#" class="pagination__link">
+							6
+						</a>
+					</li>
+					<li class="pagination__item">
+						<a href="#" class="pagination__link pagination__link-last">
+							в конец
+						</a>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<footer class="footer">

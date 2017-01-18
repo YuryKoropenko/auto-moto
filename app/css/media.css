@@ -60,6 +60,18 @@
     margin-left: 30px;
     width: 93%;
   }
+  .sidebar {
+    width: 30%;
+  }
+  .t-content-wrapper {
+    width: 65%;
+  }
+  .tov-list-wrapper {
+    width: 100%;
+  }
+  .tov__item {
+    width: 50% !important;
+  }
   /**/
 }
 
