@@ -2518,3 +2518,17 @@ body {
   z-index: 995;
   cursor: pointer;
 }
+
+.search__text {
+  position: absolute;
+  top: -16px;
+  left: 0;
+  right: 0;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+}
+
+.search {
+  position: relative !important;
+}
