@@ -2151,7 +2151,7 @@ body {
   border-radius: 5px;
 }
 
-.corz__b-center-2-row input[type=checkbox]:checked + label:after {
+.corz__b-center-2-row input[type=radio]:checked + label:after {
   content: '';
   background-image: url(../img/checkmark.png);
   background-repeat: no-repeat;
@@ -2531,4 +2531,12 @@ body {
 
 .search {
   position: relative !important;
+}
+
+.card__description-text-show {
+  display: none;
+}
+
+.card__info-wp-row-show {
+  display: none;
 }

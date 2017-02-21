@@ -32,7 +32,20 @@ $(document).ready(function() {
 
 /**/
 	$('.corz__b-center-2-row-lab').on('click', function() {
-		$(this).toggleClass('corz__b-center-2-row-lab-active');
+		$('.corz__b-center-2-row-lab').removeClass('corz__b-center-2-row-lab-active');
+		$(this).addClass('corz__b-center-2-row-lab-active');
+	});
+
+/**/
+	$('.card__description-link-full').on('click', function() {
+		$(this).remove();
+		$('.card__description-text-show').show();
+		return false;
+	});
+	$('.card__info-wp-link-full').on('click', function() {
+		$(this).remove();
+		$('.card__info-wp-row-show').show();
+		return false;
 	});
 
 /**/
