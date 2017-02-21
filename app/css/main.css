@@ -27,13 +27,13 @@ ol, ul {
   list-style: none;
 }
 
-.clearfix:after, .content-wrapper:after, .content-wrapper-1020:after, .tov-list-wrapper:after, .header__top:after, .search form:after, .basket:after, .nav:after, .content__wrapper:after, .footer__cat-wp:after, .footer__row:after, .card__info-wp-row:after, .card__right-b-row:after, .card__right-d-block:after, .card__right-d-item-wp:after, .contacts__tabs:after, .contacts__tabs-cont-wp:after, .contacts__tabs-cont-item:after, .contacts__adrr:after, .corz__element-item:after, .corz__b-center-row:after, .corz__b-center-wp:after, .corz__b-center-1-row:after {
+.clearfix:after, .content-wrapper:after, .content-wrapper-1020:after, .tov-list-wrapper:after, .header__top:after, .search form:after, .basket:after, .nav:after, .content__wrapper:after, .footer__cat-wp:after, .footer__row:after, .card__info-wp-row:after, .card__right-b-row:after, .card__right-d-block:after, .card__right-d-item-wp:after, .contacts__tabs:after, .contacts__tabs-cont-wp:after, .contacts__tabs-cont-item:after, .contacts__adrr:after, .corz__element-item:after, .corz__b-center-row:after, .corz__b-center-wp:after, .corz__b-center-1-row:after, .buy-1-click__bottom:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.clearfix:before, .content-wrapper:before, .content-wrapper-1020:before, .tov-list-wrapper:before, .header__top:before, .search form:before, .basket:before, .nav:before, .content__wrapper:before, .footer__cat-wp:before, .footer__row:before, .card__info-wp-row:before, .card__right-b-row:before, .card__right-d-block:before, .card__right-d-item-wp:before, .contacts__tabs:before, .contacts__tabs-cont-wp:before, .contacts__tabs-cont-item:before, .contacts__adrr:before, .corz__element-item:before, .corz__b-center-row:before, .corz__b-center-wp:before, .corz__b-center-1-row:before {
+.clearfix:before, .content-wrapper:before, .content-wrapper-1020:before, .tov-list-wrapper:before, .header__top:before, .search form:before, .basket:before, .nav:before, .content__wrapper:before, .footer__cat-wp:before, .footer__row:before, .card__info-wp-row:before, .card__right-b-row:before, .card__right-d-block:before, .card__right-d-item-wp:before, .contacts__tabs:before, .contacts__tabs-cont-wp:before, .contacts__tabs-cont-item:before, .contacts__adrr:before, .corz__element-item:before, .corz__b-center-row:before, .corz__b-center-wp:before, .corz__b-center-1-row:before, .buy-1-click__bottom:before {
   content: '';
   display: table;
 }
@@ -1298,6 +1298,7 @@ body {
   display: inline-block;
   line-height: 40px;
   border-radius: 5px;
+  float: right;
 }
 
 .card__right-b-button:hover {
@@ -2539,4 +2540,234 @@ body {
 
 .card__info-wp-row-show {
   display: none;
+}
+
+.card__right-b-row-n {
+  position: relative;
+}
+
+.buy-1-click {
+  position: absolute;
+  width: 518px;
+  padding: 25px 30px 25px 45px;
+  border: 1px solid #aeaeae;
+  background-color: #fff;
+  top: 52px;
+  right: 0;
+  z-index: 999;
+  display: none;
+}
+
+.buy-1-click-wp {
+  position: fixed;
+  z-index: 998;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  cursor: default;
+}
+
+.buy-1-click__top {
+  position: relative;
+}
+
+.buy-1-click__title {
+  color: #373737;
+  font-family: "ProximaNovaBold", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  display: block;
+  padding-bottom: 5px;
+  padding-top: 6px;
+}
+
+.buy-1-click__close {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  display: block;
+  background-image: url(../img/close.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  top: 5px;
+  right: 0;
+  cursor: pointer;
+}
+
+.buy-1-click__description {
+  color: #373737;
+  font-size: 16px;
+  line-height: 24px;
+  display: block;
+  padding-bottom: 8px;
+}
+
+.buy-1-click__bottom {
+  height: 80px;
+}
+
+.buy-1-click__img {
+  width: 45px;
+  height: auto;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.buy-1-click__img-wp {
+  width: 13.00448%;
+  float: left;
+  height: 80px;
+  position: relative;
+}
+
+.buy-1-click__name {
+  color: #383f51;
+  font-size: 14px;
+  line-height: 18px;
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.buy-1-click__name-wp {
+  width: 42.6009%;
+  float: left;
+  position: relative;
+  height: 80px;
+}
+
+.buy-1-click__col {
+  width: 40px;
+  height: 23px;
+  border: 1px solid #efefef;
+  text-align: right;
+  display: inline-block;
+  padding-right: 2px;
+  padding-left: 2px;
+  margin: 0 14px;
+}
+
+.buy-1-click__col-wp {
+  width: 28.02691%;
+  float: left;
+  height: 80px;
+  padding-top: 28px;
+}
+
+.buy-1-click__minus {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 3px;
+  cursor: pointer;
+}
+
+.buy-1-click__minus::after {
+  content: '';
+  width: 15px;
+  height: 3px;
+  position: absolute;
+  display: block;
+  top: 50%;
+  margin-top: -1.5px;
+  background-color: #383f51;
+}
+
+.buy-1-click__minus:hover::after {
+  background-color: #ffce00;
+}
+
+.buy-1-click__plus {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 3px;
+  cursor: pointer;
+}
+
+.buy-1-click__plus::after {
+  content: '';
+  width: 15px;
+  height: 3px;
+  position: absolute;
+  display: block;
+  top: 50%;
+  margin-top: -1.5px;
+  background-color: #383f51;
+}
+
+.buy-1-click__plus::before {
+  content: '';
+  width: 3px;
+  height: 15px;
+  position: absolute;
+  display: block;
+  left: 50%;
+  margin-left: -1.5px;
+  background-color: #383f51;
+}
+
+.buy-1-click__plus:hover::after, .buy-1-click__plus:hover::before {
+  background-color: #ffce00;
+}
+
+.buy-1-click__price {
+  color: #373737;
+  font-size: 18px;
+  height: 80px;
+  font-family: "ProximaNovaBold", sans-serif;
+  line-height: 80px;
+}
+
+.buy-1-click__price-wp {
+  width: 15.69507%;
+  float: left;
+}
+
+.buy-1-click__form {
+  padding-top: 16px;
+}
+
+.buy-1-click__icon {
+  width: 15%;
+  height: 29px;
+  display: block;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.buy-1-click__input-name {
+  display: block;
+  width: 85%;
+  height: 29px;
+  margin-bottom: 20px;
+  border: 1px solid #d2d2d2;
+  padding-left: 12px;
+  position: relative;
+}
+
+.buy-1-click__input-tel {
+  display: block;
+  margin-left: 15%;
+  width: 85%;
+  height: 29px;
+  border: 1px solid #d2d2d2;
+  padding-left: 12px;
+}
+
+.buy-1-click__r-bottom {
+  padding-top: 14px;
 }

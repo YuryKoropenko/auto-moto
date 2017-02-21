@@ -839,6 +839,7 @@ body
 				display: inline-block
 				line-height: 40px
 				border-radius: 5px
+				float: right
 				&:hover
 					text-decoration: none
 					color: #373737
@@ -1746,3 +1747,182 @@ body
 	display: none
 .card__info-wp-row-show
 	display: none
+.card__right-b-row-n
+	position: relative
+.buy-1-click
+	position: absolute
+	width: 518px
+	padding: 25px 30px 25px 45px
+	border: 1px solid #aeaeae
+	background-color: #fff
+	top: 52px
+	right: 0
+	z-index: 999
+	display: none
+	&-wp
+		position: fixed
+		z-index: 998
+		background-color: rgba(#000,.5)
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		display: none
+		cursor: default
+	&__top
+		position: relative
+	&__title
+		color: #373737
+		font-family: "ProximaNovaBold", sans-serif
+		font-size: 16px
+		line-height: 24px
+		display: block
+		padding-bottom: 5px
+		padding-top: 6px
+	&__close
+		position: absolute
+		width: 10px
+		height: 10px
+		display: block
+		background-image: url(../img/close.png)
+		background-repeat: no-repeat
+		background-position: center center
+		top: 5px
+		right: 0
+		cursor: pointer
+	&__center
+	&__description
+		color: #373737
+		font-size: 16px
+		line-height: 24px
+		display: block
+		padding-bottom: 8px
+	&__bottom
+		@extend .clearfix
+		height: 80px
+	&__img
+		width: 45px
+		height: auto
+		display: block
+		position: absolute
+		left: 0
+		top: 50%
+		-webkit-transform: translateY(-50%)
+		transform: translateY(-50%)
+		&-wp
+			+percent(58, 446)
+			float: left
+			height: 80px
+			position: relative
+	&__name
+		color: #383f51
+		font-size: 14px
+		line-height: 18px
+		position: absolute
+		display: block
+		left: 0
+		top: 50%
+		-webkit-transform: translateY(-50%)
+		transform: translateY(-50%)
+		&-wp
+			+percent(190, 446)
+			float: left
+			position: relative
+			height: 80px
+	&__col
+		width: 40px
+		height: 23px
+		border: 1px solid #efefef
+		text-align: right
+		display: inline-block
+		padding-right: 2px
+		padding-left: 2px
+		margin: 0 14px
+		&-wp
+			+percent(125, 446)
+			float: left
+			height: 80px
+			padding-top: 28px
+	&__minus
+		display: inline-block
+		width: 15px
+		height: 15px
+		position: relative
+		top: 3px
+		cursor: pointer
+		&::after
+			content: ''
+			width: 15px
+			height: 3px
+			position: absolute
+			display: block
+			top: 50%
+			margin-top: -1.5px
+			background-color: #383f51
+		&:hover
+			&::after
+				background-color: #ffce00
+	&__plus
+		display: inline-block
+		width: 15px
+		height: 15px
+		position: relative
+		top: 3px
+		cursor: pointer
+		&::after
+			content: ''
+			width: 15px
+			height: 3px
+			position: absolute
+			display: block
+			top: 50%
+			margin-top: -1.5px
+			background-color: #383f51
+		&::before
+			content: ''
+			width: 3px
+			height: 15px
+			position: absolute
+			display: block
+			left: 50%
+			margin-left: -1.5px
+			background-color: #383f51
+		&:hover
+			&::after, &::before
+				background-color: #ffce00
+	&__price
+		color: #373737
+		font-size: 18px
+		height: 80px
+		font-family: "ProximaNovaBold", sans-serif
+		line-height: 80px
+		&-wp
+			+percent(70, 446)
+			float: left
+	&__form
+		padding-top: 16px
+	&__icon
+		width: 15%
+		height: 29px
+		display: block
+		float: left
+		background-repeat: no-repeat
+		background-position: center center
+	&__input
+		&-name
+			display: block
+			width: 85%
+			height: 29px
+			margin-bottom: 20px
+			border: 1px solid #d2d2d2
+			padding-left: 12px
+			position: relative
+		&-tel
+			display: block
+			margin-left: 15%
+			width: 85%
+			height: 29px
+			border: 1px solid #d2d2d2
+			padding-left: 12px
+.buy-1-click__r-bottom
+	padding-top: 14px

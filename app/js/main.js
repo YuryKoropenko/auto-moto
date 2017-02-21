@@ -49,6 +49,21 @@ $(document).ready(function() {
 	});
 
 /**/
+	$('.buy-1-click-bt').on('click', function() {
+		$('.buy-1-click-wp').fadeIn();
+		$('.buy-1-click').fadeIn();
+		$('.buy-1-click-wp').on('click', function() {
+			$(this).fadeOut();
+			$('.buy-1-click').fadeOut();
+		});
+		return false
+	});
+	$('.buy-1-click__close').on('click', function() {
+		$('.buy-1-click-wp').fadeOut();
+		$('.buy-1-click').fadeOut();
+	});
+
+/**/
 	$('.overlay').on('click', function() {
 		$(this).remove();
 	});
