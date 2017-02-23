@@ -75,6 +75,18 @@
   .tov__item {
     width: 50% !important;
   }
+  .cat__item {
+    width: 33.333333%;
+  }
+  .cat__item:nth-child(5)::after, .cat__item:nth-child(9)::after {
+    display: block;
+  }
+  .cat__item:nth-child(1)::after, .cat__item:nth-child(4)::after, .cat__item:nth-child(7)::after, .cat__item:nth-child(10)::after {
+    display: none;
+  }
+  .w-100 {
+    padding: 0 10px;
+  }
   /**/
 }
 

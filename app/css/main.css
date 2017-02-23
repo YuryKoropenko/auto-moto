@@ -2771,3 +2771,76 @@ body {
 .buy-1-click__r-bottom {
   padding-top: 14px;
 }
+
+.cat__block {
+  font-size: 0;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.cat__item {
+  padding: 0 5%;
+  width: 25%;
+  text-align: center;
+  height: 212px;
+  display: inline-block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.cat__item::after {
+  background-color: #f3f3f3;
+  content: "";
+  height: 128px;
+  left: 0;
+  margin-top: -64px;
+  position: absolute;
+  top: 50%;
+  width: 1px;
+}
+
+.cat__item:hover {
+  -webkit-box-shadow: 0px 17px 17px 0px #eeeeee;
+  -moz-box-shadow: 0px 17px 17px 0px #eeeeee;
+  box-shadow: 0px 17px 17px 0px #eeeeee;
+}
+
+.cat__item:hover .cat__link {
+  color: #f72c25;
+  text-decoration: underline;
+}
+
+.cat__item:nth-child(1)::after, .cat__item:nth-child(5)::after, .cat__item:nth-child(9)::after {
+  display: none;
+}
+
+.cat__img {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+.cat__img-wp {
+  height: 150px;
+  width: 100%;
+  text-align: center;
+}
+
+.cat__link {
+  color: #373737;
+  font-family: "ProximaNovaBold", sans-serif;
+  font-size: 16px;
+  display: inline-block;
+}
+
+.cat__link:hover, .cat__link:active, .cat__link:focus {
+  text-decoration: none;
+  color: #373737;
+}
+
+.w-100 {
+  width: 100% !important;
+}
